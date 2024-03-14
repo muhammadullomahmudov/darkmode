@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+.mode {
+    display: inline-block;
+    width: 71px;
+    height: 31px;
+    background-color: #ccc;
+    border-radius: 30px;
+    /* margin-top: 20%;
+    margin-left: 30%; */
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mode-control {
+position: relative;
+    /* display: inline-block;
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px; */
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: -45px;
+        top: -15px;
+        background-image: url('./sun.png');
+        background-repeat: no-repeat;
+        background-size: 30px;
+    }
+}
+.dark {
+    background-color: black;
+}
+.dark2 {
+    background-color: rgba(0, 0, 0, 0.918);
+}
+.yur::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 7px;
+    top: -15px;
+    background-image: url('./half-moon.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    transform: rotate(250deg)
+
+}
